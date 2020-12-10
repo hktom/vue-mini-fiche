@@ -4,12 +4,14 @@
         margin-top: 0px !important;
     }
 </style>
-<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/app.8f77204c.css" rel="preload" as="style">
+<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/app.a0eeefdf.css" rel="preload" as="style">
 <link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/chunk-vendors.273173a9.css" rel="preload" as="style">
-<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/app.4e6fcf08.js" rel="preload" as="script">
-<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/chunk-vendors.2b8ac015.js" rel="preload" as="script">
+
+<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/app.f794f46b.js" rel="preload" as="script">
+<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/chunk-vendors.9d1e26b9.js" rel="preload" as="script">
+
 <link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/chunk-vendors.273173a9.css" rel="stylesheet">
-<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/app.8f77204c.css" rel="stylesheet">
+<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/app.a0eeefdf.css" rel="stylesheet">
 <div>
     <noscript><strong>We're sorry but cartographie doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
     <?php
@@ -46,5 +48,5 @@
     window.map_url_style = document.getElementsByClassName("app")[0].getAttribute("map_url_style");
     window.access_token = document.getElementsByClassName("app")[0].getAttribute("access_token");
 </script>
-<script src="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/chunk-vendors.2b8ac015.js"></script>
-<script src="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/app.4e6fcf08.js"></script>
+<script src="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/chunk-vendors.9d1e26b9.js"></script>
+<script src="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/app.f794f46b.js"></script>

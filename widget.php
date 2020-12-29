@@ -129,17 +129,19 @@ class Vue_Mini_Fiche extends Widget_Base {
 				'placeholder' => __( 'mapbox token access', 'self::$slug' ),
 			]
 		);
-
 		$this->end_controls_section();
+
+		//font
+		include plugin_dir_path( __FILE__ ) . 'controllers/font.php';
+		//color
+		include plugin_dir_path( __FILE__ ) . 'controllers/color.php';
+		//icon
+		include plugin_dir_path( __FILE__ ) . 'controllers/icon.php';
+		
 	}
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		/*
-		 <div class="app" id="app" class="mt-0" height="500" fill_color="red" border_color="transparent" geo_json="https://raw.githubusercontent.com/hktom/assets/master/africa-countries.geo.json" position_lng="5" position_lat="35" zoom="2.2" map_url_style="mapbox://styles/thesy/ckh0h1vl90z5o19nm3a9wq4fe/draft"
-        access_token="pk.eyJ1IjoidGhlc3kiLCJhIjoiY2tmMm5hZWM3MTlxczJ4bzAzaXR5cm5rciJ9.hD0g1llrf64deGWq2V_rqg"></div>
-		*/
-		//echo "hello world";
 		include plugin_dir_path( __FILE__ ) . '/index.php';
 	}
 }

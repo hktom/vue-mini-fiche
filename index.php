@@ -25,8 +25,19 @@
     $map_url_style=$settings['map_url_style'];
     $access_token=$settings['access_token'];
 
+    // icon
+    $mini_fiche_icon_back_value=$settings['mini_fiche_icon_back_value']['value'];
+    $mini_fiche_country_icon=$settings['mini_fiche_country_icon']['value'];
+    $mini_fiche_terms_icon=$settings['mini_fiche_terms_icon']['value'];
+    $mini_fiche_word_icon=$settings['mini_fiche_word_icon']['value'];
+    $mini_fiche_email_icon=$settings['mini_fiche_email_icon']['value'];
+    $mini_fiche_link_icon=$settings['mini_fiche_link_icon']['value'];
+
+
     echo "
-    <div class='app' id='app' class='mt-0' height='$height' fill_color='$fill_color' border_color='$border_color' geo_json='$geo_json' position_lng='$position_lng' position_lat='$position_lat' zoom='$zoom' map_url_style='$map_url_style' access_token='$access_token'>
+    <div class='app' id='app' class='mt-0' height='$height' fill_color='$fill_color' border_color='$border_color' geo_json='$geo_json' position_lng='$position_lng' position_lat='$position_lat' zoom='$zoom' map_url_style='$map_url_style' access_token='$access_token' mini_fiche_icon_back_value='$mini_fiche_icon_back_value' mini_fiche_terms_icon='$mini_fiche_terms_icon' mini_fiche_word_icon='$mini_fiche_word_icon' mini_fiche_email_icon='$mini_fiche_email_icon' mini_fiche_link_icon='$mini_fiche_link_icon'
+    mini_fiche_country_icon='$mini_fiche_country_icon'
+    >
     
     </div>
     "
@@ -47,6 +58,23 @@
     window.zoom = document.getElementsByClassName("app")[0].getAttribute("zoom");
     window.map_url_style = document.getElementsByClassName("app")[0].getAttribute("map_url_style");
     window.access_token = document.getElementsByClassName("app")[0].getAttribute("access_token");
+
+    // Icon
+    window.button_back_icon = document.getElementsByClassName("app")[0].getAttribute("mini_fiche_icon_back_value");
+    window.country_registrement_icon = document.getElementsByClassName("app")[0].getAttribute("mini_fiche_country_icon");
+    window.category_icon = document.getElementsByClassName("app")[0].getAttribute("mini_fiche_terms_icon");
+    
+    window.mini_fiche_word_icon = document.getElementsByClassName("app")[0].
+    getAttribute("mini_fiche_word_icon");
+    
+    window.mini_fiche_email_icon = document.getElementsByClassName("app")[0].
+    getAttribute("mini_fiche_email_icon");
+    
+    window.mini_fiche_link_icon = document.getElementsByClassName("app")[0].
+    getAttribute("mini_fiche_link_icon");
+
+
+
 </script>
 <script src="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/chunk-vendors.9d1e26b9.js"></script>
 <script src="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/app.8c43d126.js"></script>

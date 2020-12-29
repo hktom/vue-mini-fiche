@@ -4,14 +4,18 @@
         margin-top: 0px !important;
     }
 </style>
-<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/app.d2d5e3c3.css" rel="preload" as="style">
+<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/app.fbe1d3bd.css" rel="preload" as="style">
 <link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/chunk-vendors.273173a9.css" rel="preload" as="style">
 
-<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/app.8c43d126.js" rel="preload" as="script">
-<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/chunk-vendors.9d1e26b9.js" rel="preload" as="script">
+<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/app.0dfeea33.js" rel="preload" as="script">
+<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/chunk-vendors.e97cbe83.js" rel="preload" as="script">
 
 <link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/chunk-vendors.273173a9.css" rel="stylesheet">
-<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/app.d2d5e3c3.css" rel="stylesheet">
+<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/app.fbe1d3bd.css" rel="stylesheet">
+
+<style>
+.mini-fiche-link-icon-button{transition:0.5s}
+</style>
 <div>
     <noscript><strong>We're sorry but cartographie doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
     <?php
@@ -33,10 +37,23 @@
     $mini_fiche_email_icon=$settings['mini_fiche_email_icon']['value'];
     $mini_fiche_link_icon=$settings['mini_fiche_link_icon']['value'];
 
+    $mini_fiche_button_icon=$settings['mini_fiche_button_icon']['value'];
+
+    // icon size
+    $mini_fiche_icon_back_size=$settings['mini_fiche_icon_back_size'];
+    $mini_fiche_icon_terms_size=$settings['mini_fiche_icon_terms_size'];
+    $mini_fiche_icon_button_size=$settings['mini_fiche_icon_button_size'];
+    $more_button_size=$settings['more_button_size'];
+
 
     echo "
     <div class='app' id='app' class='mt-0' height='$height' fill_color='$fill_color' border_color='$border_color' geo_json='$geo_json' position_lng='$position_lng' position_lat='$position_lat' zoom='$zoom' map_url_style='$map_url_style' access_token='$access_token' mini_fiche_icon_back_value='$mini_fiche_icon_back_value' mini_fiche_terms_icon='$mini_fiche_terms_icon' mini_fiche_word_icon='$mini_fiche_word_icon' mini_fiche_email_icon='$mini_fiche_email_icon' mini_fiche_link_icon='$mini_fiche_link_icon'
     mini_fiche_country_icon='$mini_fiche_country_icon'
+    mini_fiche_icon_back_size='$mini_fiche_icon_back_size'
+    mini_fiche_icon_terms_size='$mini_fiche_icon_terms_size'
+    mini_fiche_icon_button_size='$mini_fiche_icon_button_size'
+    mini_fiche_button_icon='$mini_fiche_button_icon'
+    more_button_size='$more_button_size'
     >
     
     </div>
@@ -72,9 +89,25 @@
     
     window.mini_fiche_link_icon = document.getElementsByClassName("app")[0].
     getAttribute("mini_fiche_link_icon");
+    
+    window.more_button_icon = document.getElementsByClassName("app")[0].
+    getAttribute("mini_fiche_button_icon");
+
+    //size
+    window.button_back_icon_size = document.getElementsByClassName("app")[0].
+    getAttribute("mini_fiche_icon_back_size");
+    
+    window.mini_fiche_terms_icon_size = document.getElementsByClassName("app")[0].
+    getAttribute("mini_fiche_icon_terms_size");
+    
+    window.button_icon_size = document.getElementsByClassName("app")[0].
+    getAttribute("mini_fiche_icon_button_size");
+    
+    window.more_button_icon_size = document.getElementsByClassName("app")[0].
+    getAttribute("more_button_size");
 
 
 
 </script>
-<script src="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/chunk-vendors.9d1e26b9.js"></script>
-<script src="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/app.8c43d126.js"></script>
+<script src="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/chunk-vendors.e97cbe83.js"></script>
+<script src="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/app.0dfeea33.js"></script>

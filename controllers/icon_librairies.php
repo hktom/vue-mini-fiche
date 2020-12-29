@@ -57,6 +57,14 @@ $this->add_control(
     ]
 );
 
+$this->add_control(
+    'mini_fiche_button_icon',
+    [
+        'label' => __( 'Button', self::$slug ),
+        'type' => \Elementor\Controls_Manager::ICONS,
+    ]
+);
+
 $this->end_controls_section();
 
 ?>

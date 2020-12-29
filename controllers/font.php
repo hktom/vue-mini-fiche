@@ -69,6 +69,16 @@ $this->add_group_control(
     ]
 );
 
+$this->add_group_control(
+    \Elementor\Group_Control_Typography::get_type(),
+    [
+        'name' => 'button',
+        'label' => __( 'Button', 'self::$slug' ),
+        'scheme' => \Elementor\Scheme_Typography::TYPOGRAPHY_1,
+        'selector' => '{{WRAPPER}} .mini-fiche-more-button',
+    ]
+);
+
 $this->end_controls_section();
 
 

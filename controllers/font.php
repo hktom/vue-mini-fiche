@@ -55,7 +55,7 @@ $this->add_group_control(
         'name' => 'label',
         'label' => __( 'Label', 'self::$slug' ),
         'scheme' => \Elementor\Scheme_Typography::TYPOGRAPHY_1,
-        'selector' => '{{WRAPPER}} .mini-fiche-label',
+        'selector' => '{{WRAPPER}} .mini-fiche-label .link-mini-fiche-label',
     ]
 );
 

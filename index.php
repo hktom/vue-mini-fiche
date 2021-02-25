@@ -4,14 +4,14 @@
         margin-top: 0px !important;
     }
 </style>
-<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/app.fbe1d3bd.css" rel="preload" as="style">
-<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/chunk-vendors.273173a9.css" rel="preload" as="style">
+<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/main.css" rel="preload" as="style">
+<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/vendor.css" rel="preload" as="style">
 
-<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/app.0dfeea33.js" rel="preload" as="script">
-<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/chunk-vendors.e97cbe83.js" rel="preload" as="script">
+<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/main.js" rel="preload" as="script">
+<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/vendor.js" rel="preload" as="script">
 
-<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/chunk-vendors.273173a9.css" rel="stylesheet">
-<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/app.fbe1d3bd.css" rel="stylesheet">
+<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/vendor.css" rel="stylesheet">
+<link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/main.css" rel="stylesheet">
 
 <style>
 .mini-fiche-link-icon-button{transition:0.5s}
@@ -109,5 +109,5 @@
 
 
 </script>
-<script src="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/chunk-vendors.e97cbe83.js"></script>
-<script src="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/app.0dfeea33.js"></script>
+<script src="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/vendor.js"></script>
+<script src="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/main.js"></script>

@@ -64,7 +64,7 @@ $this->add_control(
             'value' => \Elementor\Scheme_Color::COLOR_1,
         ],
         'selectors' => [
-            '{{WRAPPER}} .mini-fiche-label .link-mini-fiche-label' => 'color: {{VALUE}}',
+            '{{WRAPPER}} .mini-fiche-label .link-mini-fiche-label ' => 'color: {{VALUE}}',
         ],
     ]
 );
@@ -80,6 +80,7 @@ $this->add_control(
         ],
         'selectors' => [
             '{{WRAPPER}} .mini-fiche-content' => 'color: {{VALUE}}',
+            '{{WRAPPER}} .wp-embedded-content' => 'color: {{VALUE}}',
         ],
     ]
 );

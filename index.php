@@ -1,11 +1,8 @@
-<link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet">
 <style>
-    #app {
+#app {
         margin-top: 0px !important;
     }
 </style>
-<!-- <link href="<?php //echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/main.css" rel="preload" as="style">
-<link href="<?php //echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/css/vendor.css" rel="preload" as="style"> -->
 
 <link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/main.js" rel="preload" as="script">
 <link href="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/vendor.js" rel="preload" as="script">
@@ -18,51 +15,22 @@
 </style>
 <div>
     <noscript><strong>We're sorry but cartographie doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
-    <?php
-    $height=$settings['height'];
-    $fill_color=$settings['fill_color'];
-    $border_color=$settings['border_color'];
-    $geo_json=$settings['geo_json'];
-    $position_lng=$settings['position_lng'];
-    $position_lat=$settings['position_lat'];
-    $zoom=$settings['zoom'];
-    $map_url_style=$settings['map_url_style'];
-    $access_token=$settings['access_token'];
-
-    // icon
-    $mini_fiche_icon_back_value=$settings['mini_fiche_icon_back_value']['value'];
-    $mini_fiche_country_icon=$settings['mini_fiche_country_icon']['value'];
-    $mini_fiche_terms_icon=$settings['mini_fiche_terms_icon']['value'];
-    $mini_fiche_word_icon=$settings['mini_fiche_word_icon']['value'];
-    $mini_fiche_email_icon=$settings['mini_fiche_email_icon']['value'];
-    $mini_fiche_link_icon=$settings['mini_fiche_link_icon']['value'];
-
-    $mini_fiche_button_icon=$settings['mini_fiche_button_icon']['value'];
-
-    // icon size
-    $mini_fiche_icon_back_size=$settings['mini_fiche_icon_back_size'];
-    $mini_fiche_icon_terms_size=$settings['mini_fiche_icon_terms_size'];
-    $mini_fiche_icon_button_size=$settings['mini_fiche_icon_button_size'];
-    $more_button_size=$settings['more_button_size'];
-
-
-    echo "
-    <div class='app' id='app' class='mt-0' height='$height' fill_color='$fill_color' border_color='$border_color' geo_json='$geo_json' position_lng='$position_lng' position_lat='$position_lat' zoom='$zoom' map_url_style='$map_url_style' access_token='$access_token' mini_fiche_icon_back_value='$mini_fiche_icon_back_value' mini_fiche_terms_icon='$mini_fiche_terms_icon' mini_fiche_word_icon='$mini_fiche_word_icon' mini_fiche_email_icon='$mini_fiche_email_icon' mini_fiche_link_icon='$mini_fiche_link_icon'
-    mini_fiche_country_icon='$mini_fiche_country_icon'
-    mini_fiche_icon_back_size='$mini_fiche_icon_back_size'
-    mini_fiche_icon_terms_size='$mini_fiche_icon_terms_size'
-    mini_fiche_icon_button_size='$mini_fiche_icon_button_size'
-    mini_fiche_button_icon='$mini_fiche_button_icon'
-    more_button_size='$more_button_size'
+    
+    <!-- insert directly in elementor -->
+    
+    <!-- <div id='app' class='app mt-0' height='500' fill_color='#FF0000' border_color='#BEBABA' geo_json='https://res.cloudinary.com/diaylgu7a/raw/upload/v1613400680/africa-countries.geo-multi_fno6uk.json' position_lng='5' position_lat='35' zoom='2' map_url_style='mapbox://styles/thesy/ckh0h1vl90z5o19nm3a9wq4fe/draft' access_token='pk.eyJ1IjoidGhlc3kiLCJhIjoiY2tmMm5hZWM3MTlxczJ4bzAzaXR5cm5rciJ9.hD0g1llrf64deGWq2V_rqg' mini_fiche_icon_back_value='rdafx rdafx-DA-14' mini_fiche_terms_icon='rdafx rdafx-DA-11' mini_fiche_word_icon='mfi mfi-DAFichier-2-1' mini_fiche_email_icon='mfi mfi-DAFichier-1-1' mini_fiche_link_icon='rdafx rdafx-DA-04'
+    mini_fiche_country_icon='rdafx rdafx-DA-10'
+    mini_fiche_icon_back_size='h3'
+    mini_fiche_icon_terms_size='h6'
+    mini_fiche_icon_button_size='h5'
+    mini_fiche_button_icon='rdafx rdafx-DA-09'
+    more_button_size='h6'
     >
     
-    </div>
-    "
-    ;?>
+    </div> -->
+
 
 </div>
-<script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
-<script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
 
 <script src="<?php echo plugin_dir_url( __DIR__ );?>vue-mini-fiche/js/script.js"></script>
 

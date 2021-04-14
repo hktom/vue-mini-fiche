@@ -64,7 +64,7 @@ $this->add_control(
             'value' => \Elementor\Scheme_Color::COLOR_1,
         ],
         'selectors' => [
-            '{{WRAPPER}} .mini-fiche-label .link-mini-fiche-label ' => 'color: {{VALUE}}',
+            '{{WRAPPER}} .mini-fiche-label' => 'color: {{VALUE}}',
         ],
     ]
 );
